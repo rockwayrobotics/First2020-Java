@@ -54,6 +54,16 @@ public final class Constants {
   }
 
   /**
+   * Constants for thresholds where a colour is recognized
+   */
+  public static final class ColourThresholds {
+    public static final double RED_THRESHOLD = 0.37;
+    public static final double BLUE_THRESHOLD = 0.3;
+    public static final double GREEN_THRESHOLD = 0.5;
+    public static final double YELLOW_RED_THRESHOLD = 0.3;
+  }
+
+  /**
    * Constants for Pneumatics Control Module ports
    */
   public static final class Pneumatics {
