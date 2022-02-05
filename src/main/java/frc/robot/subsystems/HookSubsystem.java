@@ -33,8 +33,8 @@ public class HookSubsystem extends SubsystemBase {
    */
   public void extend(int priority) {
     if (priority >= m_priority) {
-        m_pow = 1;
-        priority = m_priority;
+      m_pow = 1;
+      priority = m_priority;
     }
   }
 
@@ -43,10 +43,10 @@ public class HookSubsystem extends SubsystemBase {
    * @param priority Priority for this action. Only the highest priority action is run each cycle.
    */
   public void retract(int priority) {
-      if (priority >= m_priority) {
-          m_pow = -1;
-          priority = m_priority;
-      }
+    if (priority >= m_priority) {
+      m_pow = -1;
+      priority = m_priority;
+    }
   }
 
   /**
@@ -55,10 +55,10 @@ public class HookSubsystem extends SubsystemBase {
    * @param priority Priority for this action. Only the highest priority action is run each cycle.
    */
   public void move(double pow, int priority) {
-      if (priority >= m_priority) {
-          m_pow = pow;
-          priority = m_priority;
-      }
+    if (priority >= m_priority) {
+      m_pow = pow;
+      priority = m_priority;
+    }
   }
 
   /**
@@ -66,7 +66,7 @@ public class HookSubsystem extends SubsystemBase {
    * @return Height between 0 and 1. 0 is fully retracted, 1 is fully extended.
    */
   public double getHeight() {
-      return m_potentiometer.get();
+    return m_potentiometer.get();
   }
 
   @Override
