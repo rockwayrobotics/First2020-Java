@@ -71,7 +71,7 @@ public final class Constants {
     public static final int HOPPER_FORWARD = 1;
     public static final int HOPPER_REVERSE = 2;
     public static final int FLAP_FORWARD = 7;
-    public static final int FLAP_REVERSE = 8;
+    public static final int FLAP_REVERSE = 6;
   }
 
   /**
